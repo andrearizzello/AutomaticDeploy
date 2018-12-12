@@ -5,7 +5,7 @@ from git import Repo
 from github import Github
 
 G = Github()
-DEPLOY_PATH = '/tmp/deploy'
+DEPLOY_PATH = '/var/www/html'
 
 repo = G.get_repo("andrearizzello/Auto_Deploy")
 if os.path.isdir(DEPLOY_PATH):
